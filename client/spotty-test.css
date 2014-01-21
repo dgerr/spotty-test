@@ -1,0 +1,46 @@
+/* CSS declarations go here */
+* {
+	box-sizing: border-box;
+	margin: 0; padding: 0;
+}
+
+#header { 
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	padding: 0px 50px;
+	text-align: center;
+
+	background-color: #e9e9e9;
+	border-bottom: 1px solid #aaa;
+}
+
+.login { float: right; }
+
+body { 
+	font: 1em Verdana, sans-serif; 
+	color: black;
+	line-height: 1.3em;
+}
+
+h3 { background: blue; padding: 5px; }
+
+#spots {
+	background-color: lightblue;
+	padding: 20px 10px;
+	border-radius: 5px;
+}
+
+#container { 
+	position: absolute;
+	top: 5%; left: 20%;
+	width: 60%;
+}
+
+#container > div { 
+	margin: 20px 0px;
+}
+
+
+.spot { margin: 20px 0px; }
+.spot:last-child { margin: 0px }

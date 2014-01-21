@@ -1,0 +1,51 @@
+<head>
+  <title>spotty-test</title>
+</head>
+
+<body>
+  <div id="header">
+  LOGO LOL
+  <span class="login">{{> login}}</span>
+  </div>
+
+  <div id="container">
+
+  <div id="search">
+  	{{> search}}
+  </div>
+  
+  <div id="spots">
+    {{> spots}}
+  </div>
+
+  </div>
+</body>
+
+<template name="hello">
+  <h1>Hello World!</h1>
+  {{greeting}}
+  <input type="button" value="Click" />
+</template>
+
+<template name="search">
+<h3>Enter a search query below</h3>
+</template>
+
+<template name="spots">
+<h3>Hangout Spots</h3>
+{{#each posts}}
+  {{>spot}}
+{{/each}}
+</template>
+
+<template name="spot">
+  <div class="spot">
+  <h4>{{name}}</h4>
+  <h5>{{rating}}</h5> 
+  Located at: {{address}} 
+  <a href="{{url}}">(link)</a>
+  </div>
+</template>
+
+<template name="login">
+</template>
