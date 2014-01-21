@@ -8,33 +8,35 @@
 	position: absolute;
 	top: 0; left: 0;
 	width: 100%;
-	padding: 0px 50px;
-	text-align: center;
-
+	padding: 10px 50px;
 	background-color: #e9e9e9;
 	border-bottom: 1px solid #aaa;
 }
 
-.login { float: right; }
+/*.login { float: right; }*/
 
 body { 
-	font: 1em Verdana, sans-serif; 
+	font: 1em Arial, Verdana, sans-serif; 
 	color: black;
 	line-height: 1.3em;
 }
 
-h3 { background: blue; padding: 5px; }
+h3 { font-size: 1.3em; letter-spacing: -1px; }
 
 #spots {
-	background-color: lightblue;
-	padding: 20px 10px;
-	border-radius: 5px;
 }
+
+input { 
+	width: 50%; 
+	height: 20px; 
+	border-radius: 5px;
+	margin-top: 5px;
+	}
 
 #container { 
 	position: absolute;
-	top: 5%; left: 20%;
-	width: 60%;
+	top: 10%; left: 25%;
+	width: 50%;
 }
 
 #container > div { 
@@ -42,5 +44,8 @@ h3 { background: blue; padding: 5px; }
 }
 
 
-.spot { margin: 20px 0px; }
-.spot:last-child { margin: 0px }
+.spot { margin: 30px 0px; 
+	padding: 20px;
+	background: lightblue;
+	border-radius: 10px; 
+}
