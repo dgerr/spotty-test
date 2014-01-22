@@ -1,0 +1,19 @@
+<template name="homeTemplate">
+    <h1>This is the Home Page</h1>
+</template>
+ 
+<template name="profileTemplate">
+    <h1>Profile Page</h1>
+    <p>This is the profile of {{username}}.</p>
+</template>
+
+<template name="layout">
+  <div id="header">
+	  LOGO LOL
+	  <span class="login">{{loginButtons align="right"}}</span>
+  </div>
+
+  <div id="container">
+  {{yield}}
+  </div>
+</template>

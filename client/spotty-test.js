@@ -12,6 +12,12 @@ if (Meteor.isClient) {
   });
 }
 
+Template.profileTemplate.helpers({
+  username: function() {
+    console.log(Meteor.user().profile.name);
+  }
+  });
+
 if (Meteor.isServer) {
   Meteor.startup(function () {
     // code to run on server at startup

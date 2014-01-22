@@ -1,15 +1,8 @@
 <head>
-  <title>spotty-test</title>
+  <title>Welcome to spotty-test</title>
 </head>
 
-<body>
-  <div id="header">
-  LOGO LOL
-  <span class="login">{{loginButtons align="right"}}</span>
-  </div>
-
-  <div id="container">
-
+<template name="spotsList">
   <div id="search">
   	{{> search}}
   </div>
@@ -17,9 +10,7 @@
   <div id="spots">
     {{> spots}}
   </div>
-
-  </div>
-</body>
+</template>
 
 <template name="hello">
   <h1>Hello World!</h1>
